@@ -24,7 +24,7 @@ Installation
 Since the requests came from i3 users, I'll assume you already have i3 installed.
 
 1. Install py3status (e.g. sudo apt install py3status)
-2. Put the files from the i3_configs directory in ~/.i3. These are an i3 config file and a py3status config file. If you already have an i3 config that you don't want to overwrite, just copy in the bar{...} block.
+2. Put the files from the i3_configs directory in ~/.i3. These are an i3 config file and a py3status config file. Note, the i3 config file here is the default, apart from the bar{...} block which points to the py3status config file. If you already have an i3 config that you don't want to overwrite, just copy in the bar{...} block.
 3. If you want the display switching functionality, put the files from the scripts directory somewhere that's in your path, make sure you have xrandr installed, and change the display names referred to in those scripts (running xrandr will tell you the names of displays that are available).
 4. If you want the screenshot functionality you'll need scrot (installable via apt). If you want to use something else, modify the screenshot{...} block of the i3status.conf file.
 5. The settings element is set up to launch mate-control-center when clicked, which is a nice lightweight settings GUI (installable via apt). If you want this to launch something else then edit the control{...} block of the i3status.conf file.
